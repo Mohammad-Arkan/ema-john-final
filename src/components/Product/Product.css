@@ -1,5 +1,11 @@
+.product-container{
+    border: 1px solid #95A0A7;
+    border-radius: 8px;
+
+}
 .product-container img{
     height: 286px;
     width: 286px;
     padding: 8px;
+    border-radius: 8px;
 }
