@@ -4,3 +4,17 @@
     position: sticky;
     top: 0;
 }
+.btn-clear-cart{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 232px;
+    height: 48px;
+    background-color: #FF3030;
+    color: white;
+}
+.next-delete-icon{
+    height: 24px;
+    width: 24px;
+    color: white;
+}
