@@ -29,9 +29,9 @@ const Orders = () => {
             </div>
             <div className='cart-container'>
               <Cart 
-              cart ={cart}>
-                handleClearCart = {  handleClearCart={handleClearCart}}
-              </Cart>
+              cart ={cart}
+              handleClearCart={handleClearCart}
+              ></Cart>
               
             </div>
         </div>
