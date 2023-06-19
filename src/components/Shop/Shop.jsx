@@ -3,6 +3,8 @@ import { addToDb, getShoppingCart } from '../../utilities/fakedb';
 import Cart from '../Cart/Cart';
 import Product from '../Product/Product';
 import './Shop.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faRightLong } from '@fortawesome/free-solid-svg-icons'
 
 const Shop = () => {
     const [products, setProducts] = useState([]);
@@ -67,7 +69,13 @@ const Shop = () => {
                 }
             </div>
             <div className="cart-container">
-                <Cart cart={cart}></Cart>
+                <Cart cart={cart}>
+                <div className='review-order'>
+                    <p>Review Order</p>
+                    <FontAwesomeIcon className='review-order-icon' icon={faRightLong} />
+                </div>
+
+                </Cart>
             </div>
         </div>
     );

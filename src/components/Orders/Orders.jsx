@@ -3,6 +3,8 @@ import { useLoaderData } from 'react-router-dom';
 import ReviewItems from '../ReviewItems.jsx/ReviewItems';
 import Cart from '../Cart/Cart'
 import './Orders.css'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faCreditCard } from '@fortawesome/free-solid-svg-icons'
 const Orders = () => {
     const savedCart= useLoaderData()
     const [cart, setCart] = useState(savedCart)
@@ -31,7 +33,12 @@ const Orders = () => {
               <Cart 
               cart ={cart}
               handleClearCart={handleClearCart}
-              ></Cart>
+              >
+                <div className='review-order'>
+                  <p>From Orders</p>
+                  <FontAwesomeIcon className='review-order-icon' icon={faCreditCard} />
+                </div>
+              </Cart>
               
             </div>
         </div>
