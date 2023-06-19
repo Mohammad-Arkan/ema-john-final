@@ -5,6 +5,7 @@ import Product from '../Product/Product';
 import './Shop.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faRightLong } from '@fortawesome/free-solid-svg-icons'
+import { Link } from 'react-router-dom';
 
 const Shop = () => {
     const [products, setProducts] = useState([]);
@@ -70,10 +71,10 @@ const Shop = () => {
             </div>
             <div className="cart-container">
                 <Cart cart={cart}>
-                <div className='review-order'>
+                <Link to="/orders" className='review-order'>
                     <p>Review Order</p>
                     <FontAwesomeIcon className='review-order-icon' icon={faRightLong} />
-                </div>
+                </Link >
 
                 </Cart>
             </div>
